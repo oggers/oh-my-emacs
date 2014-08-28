@@ -3,6 +3,30 @@
 
 This file contains various configurations.
 
+* Monky
+  :PROPERTIES:
+  :CUSTOM_ID: monky
+  :END:
+
+[[https://github.com/ananthakumaran/monky][Monky]] provides an interactive interface for Hg.
+
+Open any file in a hg repo and run =M-x monky-status= to see the current
+status. Look at the [[http://ananthakumaran.in/monky/index.html][documentation]] for further details.
+
+#+NAME: monky
+#+BEGIN_SRC emacs-lisp
+(defun ome-monky-setup ()
+  ;; monky-status is the entry point
+  (global-set-key (kbd "C-x y") 'monky-status)
+  (add-hook 'monky-mode-hook
+            (lambda ()
+              (evil-local-mode -1))))
+
+(if (executable-find "hg")
+    (ome-install 'monky))
+#+END_SRC
+
+
 #+NAME: backup-files
 #+BEGIN_SRC emacs-lisp
 ;;; Saves backup files in a specific directory rather in
