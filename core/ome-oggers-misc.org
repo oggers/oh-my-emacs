@@ -70,7 +70,7 @@ This function is suitable to add to `find-file-hook'."
 
 ;; normally this is bound to find-file-read-only
 ;; use M-x toggle-read-only instead
-(global-set-key (kbd "C-x C-#") 'find-alternative-file-with-sudo)
+(global-set-key (kbd "C-x M-s") 'find-alternative-file-with-sudo)
 
 (add-hook 'find-file-hook 'find-file-root-header-warning)
 (add-hook 'dired-mode-hook 'find-file-root-header-warning)
