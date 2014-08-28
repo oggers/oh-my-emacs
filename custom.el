@@ -62,3 +62,6 @@ inversion of gas-comment-region"
           (delete-char 1))
       (next-line))
     (goto-char end)))
+
+(ome-load "core/ome-oggers-gtd.org")
+(ome-load "core/ome-oggers-misc.org")
