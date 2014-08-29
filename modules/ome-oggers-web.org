@@ -1,0 +1,7 @@
+#+TITLE: Oh My Emacs Web
+#+OPTIONS: toc:2 num:nil ^:nil
+
+#+NAME: web-mode
+#+BEGIN_SRC emacs-lisp
+(add-to-list 'auto-mode-alist '("\\.pt\\'" . web-mode))
+#+END_SRC

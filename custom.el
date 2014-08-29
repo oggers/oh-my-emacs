@@ -65,3 +65,16 @@ inversion of gas-comment-region"
 
 (ome-load "core/ome-oggers-gtd.org")
 (ome-load "core/ome-oggers-misc.org")
+(ome-load "modules/ome-oggers-web.org")
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(safe-local-variable-values (quote ((eval let ((local-path (dir-locals-find-file "."))) (setq python-shell-interpreter (concat (if (stringp local-path) (file-name-directory local-path) (car local-path)) "../../bin/zopepy"))) (eval let ((local-path (dir-locals-find-file "."))) (setenv "PYTHONPATH" (shell-command-to-string (concat (concat (if (stringp local-path) (file-name-directory local-path) (car local-path)) "../../bin/zopepy") " -c \"import sys; print ':'.join(sys.path)\"")))) (eval let ((local-path (dir-locals-find-file "."))) (setq elpy-rpc-python-command (concat (if (stringp local-path) (file-name-directory local-path) (car local-path)) "../../../Python-2.7/bin/python2.7")))))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
