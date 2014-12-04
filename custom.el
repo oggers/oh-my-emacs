@@ -71,10 +71,11 @@ inversion of gas-comment-region"
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(safe-local-variable-values (quote ((eval let ((local-path (dir-locals-find-file "."))) (setq python-shell-interpreter (concat (if (stringp local-path) (file-name-directory local-path) (car local-path)) "../../bin/zopepy"))) (eval let ((local-path (dir-locals-find-file "."))) (setenv "PYTHONPATH" (shell-command-to-string (concat (concat (if (stringp local-path) (file-name-directory local-path) (car local-path)) "../../bin/zopepy") " -c \"import sys; print ':'.join(sys.path)\"")))) (eval let ((local-path (dir-locals-find-file "."))) (setq elpy-rpc-python-command (concat (if (stringp local-path) (file-name-directory local-path) (car local-path)) "../../../Python-2.7/bin/python2.7")))))))
+ '(safe-local-variable-values (quote ((eval let ((local-path (dir-locals-find-file "."))) (setq python-shell-interpreter (concat (if (stringp local-path) (file-name-directory local-path) (car local-path)) "../bin/zopepy"))) (eval let ((local-path (dir-locals-find-file "."))) (setenv "PYTHONPATH" (shell-command-to-string (concat (concat (if (stringp local-path) (file-name-directory local-path) (car local-path)) "../bin/zopepy") " -c \"import sys; print ':'.join(sys.path)\"")))) (eval let ((local-path (dir-locals-find-file "."))) (setq elpy-rpc-python-command (concat (if (stringp local-path) (file-name-directory local-path) (car local-path)) "../../Python-2.7/bin/python2.7"))) (python-shell-interpreter . "bin/zopy") (python-plone-zopepy . "bin/zopepy") (eval let ((local-path (dir-locals-find-file "."))) (setq python-shell-interpreter (concat (if (stringp local-path) (file-name-directory local-path) (car local-path)) "../../bin/zopepy"))) (eval let ((local-path (dir-locals-find-file "."))) (setenv "PYTHONPATH" (shell-command-to-string (concat (concat (if (stringp local-path) (file-name-directory local-path) (car local-path)) "../../bin/zopepy") " -c \"import sys; print ':'.join(sys.path)\"")))) (eval let ((local-path (dir-locals-find-file "."))) (setq elpy-rpc-python-command (concat (if (stringp local-path) (file-name-directory local-path) (car local-path)) "../../../Python-2.7/bin/python2.7")))))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(ac-emacs-eclim-candidate-face ((t (:inherit ac-candidate-face))))
+ '(ac-emacs-eclim-selection-face ((t (:inherit ac-selection-face)))))
