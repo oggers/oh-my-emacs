@@ -253,7 +253,9 @@ detailed differences, check [[https://github.com/syohex/emacs-git-gutter][git-gu
   (require 'git-gutter-fringe)
   (global-git-gutter-mode))
 
-(ome-install 'git-gutter-fringe)
+;; only install when on graphic display
+(when (display-graphic-p)
+  (ome-install 'git-gutter-fringe))
 #+END_SRC
 
 * Visual-line-mode
