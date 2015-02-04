@@ -30,6 +30,7 @@ This is part of the [[https://github.com/xiaohanyu/oh-my-emacs][oh-my-emacs]].
               (linum-mode 1))))
 
 ;; make the fringe thinner (default is 8 in pixels)
+(require 'fringe)
 (fringe-mode 4)
 
 ;; show parenthesis match

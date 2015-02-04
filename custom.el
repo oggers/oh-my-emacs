@@ -79,3 +79,7 @@ inversion of gas-comment-region"
  ;; If there is more than one, they won't work right.
  '(ac-emacs-eclim-candidate-face ((t (:inherit ac-candidate-face))))
  '(ac-emacs-eclim-selection-face ((t (:inherit ac-selection-face)))))
+
+;; enable accents on emacs, seems to be a problem with ubuntu
+;; http://ubuntudriver.blogspot.com.es/2014/01/instalacion-estandar-de-ubuntu-1310.html
+(load-library "iso-transl")
